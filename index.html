@@ -5,58 +5,8 @@
 	<title> Aula JS</title>
 
 	<script>
-
-
-		//Verificar se a pessoa pode ou nao votar, mostrar o resulta no alerta, no console e no documento HTML
-
-		nome();
-		console.log("Oi mundo")
-
-		var idade = 25;
-		var numero1 = 2;
-		var numero2 = 3;
-		var numero3 = numero1 + numero2;
-		//console.log(typeof(numero))
-		
-		var alunos = ["Barbara", "Afonso", 'Davi', 'Walmond', 'Lohan']
-
-		//for(var cont=0; cont < alunos.length; cont++){
-		//	console.log(alunos[cont]);
-		//}
-
-		soma(3, 5);
-		//console.log(alunos)
-
-		//Condições
-		//if(numero3 >= 10){
-			//Executa
-		//	alert("Numero maior que 10")
-		//} else{
-			//Executa outro trecho de código
-			//alert("Numero menor que 10")
-		//}
-
-		function nome(){
-			alert("Meu nome é josé")
-		}
-
-
-
-		soma(10, 50);
-
-		function soma(num1, num2){
-			alert(num1+num2);
-		}
-
-		document.write("Alunos: ");
-		function listarAluno(){
-			for(var cont=0; cont < alunos.length ; cont++){
-				document.write(" - "+ alunos[cont])
-			}
-		}
-
-		listarAluno();
-			
+		var corpo = document.body
+		corpo.style.background = 'red'
 	</script>
 
 
@@ -72,6 +22,5 @@
 </head>
 <body>
 <h2>Aula JS</h2>
-<h4>Aprendendo Git</h4>
 </body>
 </html>
