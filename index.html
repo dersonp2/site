@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta chartset="utf-8" />
-	<title> Aula JS</title>
+    <meta chartset="utf-8" />
+    <title> Aula JS</title>
+    <!-- Código Javascript -->
+    <script>
+        // var nome;
+        // var confirma
 
-	<script>
-		var corpo = document.body
-		corpo.style.background = 'red'
-	</script>
+        // nome = prompt("Qual o seu nome?");
+        // confirma = confirm("Seu nome é " + nome + " ?");
 
-
-
-
-
-	<style>
-	body{
-		background-color:  lightblue;
-	}
-	h3{
-		font-color: red;
-	}
-	</style>
-
+        // if (confirma == true) {
+        //     alert("Você digitou seu nome correto")
+        //     document.write("Você digitou seu nome correto")
+        // } else {
+        //     alert("Você informou seu nome errado!")
+        //     document.write("Você informou seu nome errado!")
+        // }
+    </script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
-<h2>Aula JS</h2>
-<h3>Subtitulo do site</h3>
-:)
+    <div class="container">
+
+        <div class="alert alert-primary" role="alert">
+            Aula JS - LPW NOITE
+        </div>
+        <h2 class="contato">Aula JS de hoje</h2>
+        <h2></h2>
+        <p id="idH3">Manipular elementos HTML através do <b>Js</b></p>
+
+        <p id="idP">a</p>
+
+
+        <p id="outroP"></p>
+        <div class="final">
+            Finalizando o conteúdo sobre getElement
+        </div>
+
+        <div class="contato">
+            Entre em contato
+        </div>
+    </div>
+    <script>
+        var paragrafo = document.getElementById("idP");
+        paragrafo.innerText = "Texto escrito pelo JS"
+
+        var h3 = document.getElementById("idH3");
+
+        var outrop = document.getElementById("outroP");
+        outrop.innerHTML = h3.innerHTML
+            // innerText = texto 
+            // innerHTML = texto + formatação
+
+        var h2 = document.getElementsByTagName('h2')[1]
+        h2.innerText = "Manipulando o DOM "
+
+        var final = document.querySelector('div.final')
+        final.innerText = final.innerText + ' Query Select'
+
+        var contato = document.getElementsByClassName('contato')[1]
+        contato.style.background = 'black';
+    </script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
